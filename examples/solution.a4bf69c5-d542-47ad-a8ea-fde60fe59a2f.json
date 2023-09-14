@@ -1,0 +1,30 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/benchmark_instance.schema.0.0.1.json",
+    "solution_uuid":"a4bf69c5-d542-47ad-a8ea-fde60fe59a2f",
+    "benchmark_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
+    "creation_timestamp": "2023-09-14T18:14:51",
+    "short_name": "1.5_C6H6_solution",
+    "benchmark_requirements":{
+        "time_limit_seconds":86400,
+        "accuracy":1,
+        "measure_units":"kcal/mol"
+    },
+    "contact_info": [
+        {
+            "name": "BOBQAT Team",
+            "email": "bobqat@l3harris.com",
+            "institution": "L3Harris Technologies, Inc.",
+            "other_info": {
+                "website": "www.l3harris.com"
+            }
+        },
+        {
+            "name": "Zapata AI",
+            "email": "bobqat@zapatacomputing.com",
+            "institution": "Zapata AI",
+            "other_info": {
+                "website": "https://zapata.ai/"
+            }
+        }
+    ]
+}
