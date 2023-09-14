@@ -1,0 +1,12 @@
+{
+
+    "$schema": "https://github.com/jp7745/qb-file-schemas/blob/main/schemas/test.schema.json",
+
+    "some_string":"hello",
+
+    "some_number":17,
+
+    "some_uuid":"2fb4851f-7bcd-45e6-9fad-241e718de8a3"
+    
+
+}

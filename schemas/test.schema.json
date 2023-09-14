@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "test.schema.json",
+    "title": "Testing Linting",
+    "description": "Testing linting and automatically fetching schema.",
+    "required": [
+        "some_string",
+        "some_number",
+        "some_uuid"
+    ],
+    "properties": {
+        "some_string": {
+            "title": "Some String",
+            "description": "the description",
+            "type": "string"
+        },
+        "some_number":{
+            "title":"Some Number",
+            "description":"the description",
+            "type": "number"
+        },
+        "some_uuid":{
+            "title":"Some UUID",
+            "description":"the uuid description",
+            "type":"string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        }
+    }
+}
