@@ -1,0 +1,128 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "benchmark_instance.schema.0.0.1.json",
+    "title": "Quantum Benchmarking Instance File Schema",
+    "description": "Describes required fields for a valid benchmark instance file.",
+    "required": [
+        "benchmark_instance_uuid",
+        "short_name",
+        "creation_timestamp",
+        "contact_info",
+        "benchmark_type",
+        "instance_data",
+        "instance_features",
+        "status",
+        "superceded_by",
+        "benchmark_requirements",
+        "application_domain"
+    ],
+    "properties": {
+        "benchmark_instance_uuid":{
+            "title":"Benchmark Instance UUID",
+            "description":"The UUID of the benchmark instance as a string in 8-4-4-4-12 format.",
+            "type":"string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "creation_timestamp": {
+            "title": "Creation Timestamp",
+            "description": "Timestamp in ISO 8601 format to the second.",
+            "type": "string"
+        },
+        "short_name":{
+            "title": "Short Name",
+            "description":"A friendly name for the instance.  Not necessarily unique.",
+            "type": "string"
+        },
+        "contact_info": {
+            "title": "Point of Contact(s)",
+            "description": "A list of name/email/institution objects.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "name",
+                    "email",
+                    "institution"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "email": {
+                        "title": "Email",
+                        "type": "string"
+                    },
+                    "institution": {
+                        "title": "Institution/Organization",
+                        "type": "string"
+                    },
+                    "other_info": {
+                        "title": "Other Information",
+                        "description": "An optional object with no required structure for the test performer to put other contact information or comments in.",
+                        "type": "object"
+                    }
+                }
+            }
+        },
+
+        "status":{
+            "title":"Status of the Test Procedure",
+            "description":"may be 'in_force', 'in_development', 'deprecated'.",
+            "type":"string",
+            "enum": [   
+                "in_force",
+                "in_development",
+                "deprecated"
+            ]
+        },
+        "superseded_by":{
+            "title":"Successor Test Procedure",
+            "description":"If this benchmark instance is status:deprecated, this field lists the UUID of the successor test_procedure object.\nIf this test_procedure is NOT deprecated, then the value is set to null.",
+            "oneOf":[
+                {
+                    "type":"string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                },
+                {
+                    "type":"null"
+                }
+            ]
+        },
+        "benchmark_type":{
+            "title":"Benchmark Type",
+            "description":"Choose from the following:\n\nGSEE\nQUANTUM_DYNAMICS\nDIFFERENTIAL_EQUATIONS\nOTHER",
+            "type":"string",
+            "enum":[
+                "GSEE",
+                "QUANTUM_DYNAMICS",
+                "DIFFERENTIAL_EQUATIONS",
+                "OTHER"
+            ]
+        },
+        "application_domain":{
+            "title":"Application Domain",
+            "description":"Domain of the Benchmark Instance.  Choose from the following:\n\nCM: Condense Matter\nQC: Quantum Chemistry\nQB: Quantum Biochemistry\nBIO: Biology/Biomedical\nENG: Engineering\nFLP: Fluids/Plasmas\nOPT: Optimization\nDML: Data and Machine Learning\nHEP: High-Energy and Fundamental Physics",
+            "type":"string",
+            "enum":[
+                "CM",
+                "QC",
+                "QB",
+                "BIO",
+                "ENG",
+                "FLP",
+                "OPT",
+                "DML",
+                "HEP"
+            ]
+        },
+        "instance_data":{
+            "title":"Instance Data",
+            "description":"A list of objects describing the required data.  Exact structure is TDB.  For large instances, a URL to the data is given.",
+            "type":"array",
+            "items":{
+                "type":"object"
+            }
+        }
+    }
+}

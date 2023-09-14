@@ -1,6 +1,6 @@
 {
 
-    "$schema": "https://github.com/jp7745/qb-file-schemas/blob/main/schemas/test.schema.json",
+    "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/test.schema.json",
 
     "some_string":"hello",
 
