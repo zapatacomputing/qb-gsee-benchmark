@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/performance_metrics.schema.0.0.1.json",
+    "performance_metrics_uuid": "93d43d7b-8c69-4c34-ab9e-34cf8d290500",
+    "solution_uuid":"a4bf69c5-d542-47ad-a8ea-fde60fe59a2f",
+    "benchmark_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
+    "creation_timestamp": "2023-09-14T20:14:51",
+    "short_name": "gsee_performance_metrics",
+    "performance_metrics_calculator_details": {
+        "type":"GSEE",
+        "name":"L3Harris-GSEE-performance-metrics-calculator",
+        "version":"0.2"
+    },
+    "solution_calculated_within_time_limit": true,
+    "solution_submitted_by_due_date": true,
+    "performance_metrics": {
+        "wall_clock_run_time_seconds": 8432,
+        "accuracy":0.02,
+        "within_accuracy_threshold":true
+    }
+}
