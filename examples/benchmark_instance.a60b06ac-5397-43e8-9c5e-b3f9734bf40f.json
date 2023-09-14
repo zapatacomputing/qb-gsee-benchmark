@@ -1,7 +1,67 @@
 {
-
     "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/benchmark_instance.schema.0.0.1.json",
-
-    "benchmark_instance_uuid":"a60b06ac-5397-43e8-9c5e-b3f9734bf40f"
-
+    "benchmark_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
+    "benchmark_type": "GSEE",
+    "application_domain": "QC",
+    "creation_timestamp": "2023-09-13T20:14:51",
+    "short_name": "1.5_C6H6",
+    "instance_data": [
+        {
+            "comment": "second quantized hamiltonian in HDF5 format.",
+            "instance_data_url": "https://this-example-link-doesnt-work-yet",
+            "instance_data_checksum_type": "sha1sum",
+            "instance_data_checksum": "ae340787b68dfc0b5cf27fc68ed1f8790e2217d5"
+        }
+    ],
+    "instance_features": {
+        "molecule_name": "C6H6",
+        "basis_set": "sto-6g",
+        "geometry": [
+            "C -6.0e-5 2.12148 0.0",
+            "C -1.83706 1.06063 0.0",
+            "C -1.83704 -1.06068 0.0",
+            "C -0.0 -2.12148 -0.0",
+            "C 1.83702 -1.06066 -0.0",
+            "C 1.83695 1.06063 0.0",
+            "H 8.0e-5 3.22565 0.0",
+            "H -2.7933 1.61272 0.0",
+            "H -2.79333 -1.61268 0.0",
+            "H 0.00011 -3.22565 0.0",
+            "H 2.79329 -1.61268 0.0",
+            "H 2.79321 1.61268 0.0"
+        ],
+        "charge": 0,
+        "multiplicity": 1,
+        "avas_atomic_orbitals": [
+            "H 1s",
+            "C 2s",
+            "C 2p"
+        ],
+        "avas_minao": "STO-3G"
+    },
+    "benchmark_requirements":{
+        "time_limit_seconds":86400,
+        "accuracy":1,
+        "measure_units":"kcal/mol"
+    },
+    "status": "in_force",
+    "superseded_by": null,
+    "contact_info": [
+        {
+            "name": "BOBQAT Team",
+            "email": "bobqat@l3harris.com",
+            "institution": "L3Harris Technologies, Inc.",
+            "other_info": {
+                "website": "www.l3harris.com"
+            }
+        },
+        {
+            "name": "Zapata AI",
+            "email": "bobqat@zapatacomputing.com",
+            "institution": "Zapata AI",
+            "other_info": {
+                "website": "https://zapata.ai/"
+            }
+        }
+    ]
 }

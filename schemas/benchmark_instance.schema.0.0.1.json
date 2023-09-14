@@ -123,6 +123,12 @@
             "items":{
                 "type":"object"
             }
+        },
+        "instance_features":{
+            "title":"Instance Features",
+            "description":"An object describing the features of the instance. E.g., basis set used for Hamiltonian creation, number of orbitals, etc.  Exact structure is TBD.",
+            "type":"object"
         }
+
     }
 }
