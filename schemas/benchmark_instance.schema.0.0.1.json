@@ -7,6 +7,7 @@
         "benchmark_instance_uuid",
         "short_name",
         "creation_timestamp",
+        "calendar_due_date",
         "contact_info",
         "benchmark_type",
         "instance_data",
@@ -28,9 +29,21 @@
             "description": "Timestamp in ISO 8601 format to the second.",
             "type": "string"
         },
+        "calendar_due_date": {
+            "title": "Calendar Due Date",
+            "description": "For competitions and ad hoc evaluations this may be set so that the benchmark performer must return a solution by the due date (down to the second).  The value is a string with a timestamp in ISO 8601 format to the second.\n\n If there is no due date, it is set to `null`.",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        },
         "short_name": {
             "title": "Short Name",
-            "description": "A friendly name for the instance.  Not necessarily unique.",
+            "description": "A short string.  Not necessarily unique.",
             "type": "string"
         },
         "contact_info": {

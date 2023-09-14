@@ -1,0 +1,67 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "performance_metrics.schema.0.0.1.json",
+    "title": "Quantum Benchmarking Performance Metrics File Schema",
+    "description": "Describes required fields for a valid performance metrics file.",
+    "required": [
+        "performance_metrics_uuid",
+        "solution_uuid",
+        "benchmark_instance_uuid",
+        "short_name",
+        "performance_metrics_calculator_details",
+        "creation_timestamp",
+        "solution_submitted_by_due_date",
+        "solution_calculated_within_time_limit",
+        "performance_metrics"
+    ],
+    "properties": {
+        "performance_metrics_uuid": {
+            "title": "Performance Metrics UUID",
+            "description": "The UUID of the performance metrics file as a string in 8-4-4-4-12 format.",
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "solution_uuid": {
+            "title": "Solution UUID",
+            "description": "The UUID of the solution that the performance metrics were calculated for.  A string in 8-4-4-4-12 format.",
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "benchmark_instance_uuid": {
+            "title": "Benchmark Instance UUID",
+            "description": "The UUID of the benchmark instance that the solution is based on.",
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "creation_timestamp": {
+            "title": "Creation Timestamp",
+            "description": "Timestamp in ISO 8601 format to the second.",
+            "type": "string"
+        },
+        "short_name": {
+            "title": "Short Name",
+            "description": "A short string.  Not necessarily unique.",
+            "type": "string"
+        },
+        "performance_metrics_calculator_details":{
+            "title": "Performance Metrics Calculator Details",
+            "description": "Information on the type/version and attribution of the software used to evaluate the solution file and produce the performance metrics.",
+            "type": "object"
+        },
+        "solution_calculated_within_time_limit":{
+            "title": "Solution Calculated Within Time Limit?",
+            "description": "A boolean to identify if the solution was calculated within the required time limit.",
+            "type": "boolean"
+        },
+        "solution_submitted_by_due_date":{
+            "title": "Solution Within Due Date?",
+            "description": "A boolean to identify if the solution was submitted by the required due date.  If there was no due date specified, then this is `true`.",
+            "type": "boolean"
+        },
+        "performance_metrics":{
+            "title": "Performance Metrics Object",
+            "description": "An object holding the various performance metrics calculated.  The exact structure is TBD and will change based on type of benchmark (GSEE, QUANTUM_DYNAMICS, DIFFERENTIAL_EQUATIONS, etc).",
+            "type": "object"
+        }
+    }
+}

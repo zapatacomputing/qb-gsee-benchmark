@@ -35,7 +35,7 @@
         },
         "short_name": {
             "title": "Short Name",
-            "description": "A friendly name for the solution.  Not necessarily unique.",
+            "description": "A short string.  Not necessarily unique.",
             "type": "string"
         },
         "contact_info": {
