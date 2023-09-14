@@ -72,16 +72,16 @@
             "description": "An object to capture the short name and version of the software/script used to generate the logical circuit.",
             "type": "object"
         },
-        "logical_circuit_details":{
+        "logical_circuit_details": {
             "title": "Logical Circuit Details",
             "description": "A URL to the OpenQASM (TBD) file containing the circuit and other details about the algorithm being implemented.",
-            "type":"object",
-                "required":[
-                    "algorithm_short_name",
-                    "number_of_logical_qubits",
-                    "circuit_depth",
-                    "circuit_file_url"
-                ]
+            "type": "object",
+            "required": [
+                "algorithm_short_name",
+                "number_of_logical_qubits",
+                "circuit_depth",
+                "circuit_file_url"
+            ]
         }
     }
 }

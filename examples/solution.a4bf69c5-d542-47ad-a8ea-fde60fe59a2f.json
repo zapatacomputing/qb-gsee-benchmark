@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/solution.schema.0.0.1.json",
-    "solution_uuid":"a4bf69c5-d542-47ad-a8ea-fde60fe59a2f",
+    "solution_uuid": "a4bf69c5-d542-47ad-a8ea-fde60fe59a2f",
     "benchmark_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
     "creation_timestamp": "2023-09-14T18:14:51",
     "short_name": "1.5_C6H6_solution",
@@ -22,79 +22,79 @@
             }
         }
     ],
-    "solution_data":[
+    "solution_data": [
         {
-            "enthalpy_kcal_per_mol":11.64
+            "enthalpy_kcal_per_mol": 11.64
         }
     ],
-    "compute_details":{
-        "hardware_type":"classical_computer",
-        "hardware_details":{
+    "compute_details": {
+        "hardware_type": "classical_computer",
+        "hardware_details": {
             "name": "Panther Compute Cluster v1.2",
-            "compute_node_specifications":[
+            "compute_node_specifications": [
                 {
-                    "name":"hostname_1",
+                    "name": "hostname_1",
                     "total_memory_gb": 16,
                     "memory_details": null,
                     "total_cpus": 4,
-                    "cpu_details":null,
+                    "cpu_details": null,
                     "total_disk": null,
-                    "disk_details":null,
-                    "gpu_details":null
+                    "disk_details": null,
+                    "gpu_details": null
                 },
                 {
-                    "name":"hostname_2",
+                    "name": "hostname_2",
                     "total_memory_gb": 16,
                     "memory_details": null,
                     "total_cpus": 4,
-                    "cpu_details":null,
+                    "cpu_details": null,
                     "total_disk": null,
-                    "disk_details":null,
-                    "gpu_details":null
+                    "disk_details": null,
+                    "gpu_details": null
                 }
             ]
         },
-        "software_details":{
+        "software_details": {
             "name": "Panther GSEE Solver v2.0",
             "version": "2.0",
-            "references":{
-                "blaze2018":"https://www.bigcat.com/blazing_algorithm/"
+            "references": {
+                "blaze2018": "https://www.bigcat.com/blazing_algorithm/"
             },
-            "non_default_parameters":null
+            "non_default_parameters": null
         }
     },
     "compute_hardware_type": "classical_computer",
-    "digital_signature":null,
-    "run_time":{
-        "overall_time":{
+    "digital_signature": null,
+    "run_time": {
+        "overall_time": {
             "wall_clock_start_time": "2023-09-14T19:15:11.146",
             "wall_clock_stop_time": "2023-09-14T19:25:16.088",
             "seconds": 604.942
-        },            
-        "preprocessing_time":{
+        },
+        "preprocessing_time": {
             "wall_clock_start_time": "2023-09-14T19:15:11.146",
             "wall_clock_stop_time": "2023-09-14T19:15:12.845",
             "seconds": 1.699
         },
-        "algorithm_run_time":{
+        "algorithm_run_time": {
             "wall_clock_start_time": "2023-09-14T19:15:13.055",
             "wall_clock_stop_time": "2023-09-14T19:25:14.004",
-            "seconds":600.949,
+            "seconds": 600.949,
             "compute_node_run_time_breakdown": [
                 {
-                    "name":"hostname_1",
+                    "name": "hostname_1",
                     "seconds": 599.450
                 },
                 {
-                    "name":"hostname_2",
+                    "name": "hostname_2",
                     "seconds": 510.500
                 }
             ]
         },
-        "postprocessing_time":{
+        "postprocessing_time": {
             "wall_clock_start_time": "2023-09-14T19:25:15.511",
             "wall_clock_stop_time": "2023-09-14T19:25:16.088",
-            "seconds":0.577
+            "seconds": 0.577
         }
     }
 }

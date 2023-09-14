@@ -4,7 +4,7 @@
     "benchmark_type": "GSEE",
     "application_domain": "QC",
     "creation_timestamp": "2023-09-13T20:14:51",
-    "calendar_due_date":null,
+    "calendar_due_date": null,
     "short_name": "1.5_C6H6",
     "instance_data": [
         {
@@ -40,10 +40,10 @@
         ],
         "avas_minao": "STO-3G"
     },
-    "benchmark_requirements":{
-        "time_limit_seconds":86400,
-        "accuracy":1,
-        "measure_units":"kcal/mol"
+    "benchmark_requirements": {
+        "time_limit_seconds": 86400,
+        "accuracy": 1,
+        "measure_units": "kcal/mol"
     },
     "status": "in_force",
     "superseded_by": null,
