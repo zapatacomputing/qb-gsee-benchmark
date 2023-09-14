@@ -9,6 +9,7 @@
         "short_name",
         "creation_timestamp",
         "contact_info",
+        "circuit_generation_software_details",
         "logical_circuit_details"
     ],
     "properties": {
@@ -65,6 +66,11 @@
                     }
                 }
             }
+        },
+        "circuit_generation_software_details": {
+            "title": "Circuit Generation Software Details",
+            "description": "An object to capture the short name and version of the software/script used to generate the logical circuit.",
+            "type": "object"
         },
         "logical_circuit_details":{
             "title": "Logical Circuit Details",

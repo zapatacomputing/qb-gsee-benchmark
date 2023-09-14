@@ -22,9 +22,14 @@
             }
         }
     ],
+    "circuit_generation_software_details":{
+        "software_name":"zapata_qpe_for_gsee_circuit_generator",
+        "version":"3.1b"
+    },
     "logical_circuit_details": {
+
         "algorithm_short_name":"quantum_phase_estimation_for_GSEE",
-        "number_of_logical_qubits":"62",
+        "number_of_logical_qubits":62,
         "circuit_depth":724,
         "circuit_file_url":"https://this-link-doesnt-work-yet"
     }
