@@ -1,0 +1,81 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "logical_circuit.schema.0.0.1.json",
+    "title": "Quantum Benchmarking Logical Circuit File Schema",
+    "description": "Describes required fields for a valid Logical Circuit (TA1.5 output) file.",
+    "required": [
+        "logical_circuit_uuid",
+        "benchmark_instance_uuid",
+        "short_name",
+        "creation_timestamp",
+        "contact_info",
+        "logical_circuit_details"
+    ],
+    "properties": {
+        "logical_circuit_uuid": {
+            "title": "Solution UUID",
+            "description": "The UUID of the solution being submitted as a string in 8-4-4-4-12 format.",
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "benchmark_instance_uuid": {
+            "title": "Benchmark Instance UUID",
+            "description": "The UUID of the benchmark instance that the solution is based on.",
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "creation_timestamp": {
+            "title": "Creation Timestamp",
+            "description": "Timestamp in ISO 8601 format to the second.",
+            "type": "string"
+        },
+        "short_name": {
+            "title": "Short Name",
+            "description": "A short string.  Not necessarily unique.",
+            "type": "string"
+        },
+        "contact_info": {
+            "title": "Point of Contact(s)",
+            "description": "A list of name/email/institution objects.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "name",
+                    "email",
+                    "institution"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "email": {
+                        "title": "Email",
+                        "type": "string"
+                    },
+                    "institution": {
+                        "title": "Institution/Organization",
+                        "type": "string"
+                    },
+                    "other_info": {
+                        "title": "Other Information",
+                        "description": "An optional object with no required structure for the test performer to put other contact information or comments in.",
+                        "type": "object"
+                    }
+                }
+            }
+        },
+        "logical_circuit_details":{
+            "title": "Logical Circuit Details",
+            "description": "A URL to the OpenQASM (TBD) file containing the circuit and other details about the algorithm being implemented.",
+            "type":"object",
+                "required":[
+                    "algorithm_short_name",
+                    "number_of_logical_qubits",
+                    "circuit_depth",
+                    "circuit_file_url"
+                ]
+        }
+    }
+}
