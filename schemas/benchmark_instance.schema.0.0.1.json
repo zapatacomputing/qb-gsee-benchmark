@@ -13,7 +13,7 @@
         "instance_data",
         "instance_features",
         "status",
-        "superceded_by",
+        "superseded_by",
         "benchmark_requirements",
         "application_domain"
     ],
