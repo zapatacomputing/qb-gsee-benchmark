@@ -6,7 +6,7 @@
     "required": [
         "performance_metrics_uuid",
         "solution_uuid",
-        "benchmark_instance_uuid",
+        "problem_instance_uuid",
         "short_name",
         "performance_metrics_calculator_details",
         "creation_timestamp",
@@ -27,16 +27,17 @@
             "type": "string",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "benchmark_instance_uuid": {
-            "title": "Benchmark Instance UUID",
-            "description": "The UUID of the benchmark instance that the solution is based on.",
+        "problem_instance_uuid": {
+            "title": "Problem Instance UUID",
+            "description": "The UUID of the problem instance that the solution is based on.",
             "type": "string",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "creation_timestamp": {
             "title": "Creation Timestamp",
-            "description": "Timestamp in ISO 8601 format to the second.",
-            "type": "string"
+            "description": "Timestamp in ISO 8601 format to the second in UTC (note the `Z`).",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]d{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
         },
         "short_name": {
             "title": "Short Name",
@@ -60,7 +61,7 @@
         },
         "performance_metrics": {
             "title": "Performance Metrics Object",
-            "description": "An object holding the various performance metrics calculated.  The exact structure is TBD and will change based on type of benchmark (GSEE, QUANTUM_DYNAMICS, DIFFERENTIAL_EQUATIONS, etc).",
+            "description": "An object holding the various performance metrics calculated.  The exact structure is TBD and will change based on type of problem (GSEE, QUANTUM_DYNAMICS, DIFFERENTIAL_EQUATIONS, etc).",
             "type": "object"
         }
     }

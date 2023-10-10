@@ -1,9 +1,9 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/benchmark_instance.schema.0.0.1.json",
-    "benchmark_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
-    "benchmark_type": "GSEE",
+    "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/problem_instance.schema.0.0.1.json",
+    "problem_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
+    "problem_type": "GSEE",
     "application_domain": "QC",
-    "creation_timestamp": "2023-09-13T20:14:51",
+    "creation_timestamp": "2023-09-13T20:14:51Z",
     "calendar_due_date": null,
     "short_name": "1.5_C6H6",
     "instance_data": [
@@ -40,7 +40,7 @@
         ],
         "avas_minao": "STO-3G"
     },
-    "benchmark_requirements": {
+    "problem_requirements": {
         "time_limit_seconds": 86400,
         "accuracy": 1,
         "measure_units": "kcal/mol"

@@ -1,40 +1,43 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "benchmark_instance.schema.0.0.1.json",
-    "title": "Quantum Benchmarking Instance File Schema",
-    "description": "Describes required fields for a valid benchmark instance file.",
+    "$id": "problem_instance.schema.0.0.1.json",
+    "title": "Quantum Benchmarking Problem Instance File Schema",
+    "description": "Describes required fields for a valid problem instance file.",
     "required": [
-        "benchmark_instance_uuid",
+        "problem_instance_uuid",
         "short_name",
         "creation_timestamp",
         "calendar_due_date",
         "contact_info",
-        "benchmark_type",
+        "problem_type",
         "instance_data",
         "instance_features",
         "status",
         "superseded_by",
-        "benchmark_requirements",
+        "problem_requirements",
         "application_domain"
     ],
     "properties": {
-        "benchmark_instance_uuid": {
-            "title": "Benchmark Instance UUID",
-            "description": "The UUID of the benchmark instance as a string in 8-4-4-4-12 format.",
+        "problem_instance_uuid": {
+            "title": "Problem Instance UUID",
+            "description": "The UUID of the problem instance as a string in 8-4-4-4-12 format.",
             "type": "string",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "creation_timestamp": {
             "title": "Creation Timestamp",
-            "description": "Timestamp in ISO 8601 format to the second.",
-            "type": "string"
+            "description": "Timestamp in ISO 8601 format to the second in UTC (note the `Z`).",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]d{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
         },
         "calendar_due_date": {
             "title": "Calendar Due Date",
-            "description": "For competitions and ad hoc evaluations this may be set so that the benchmark performer must return a solution by the due date (down to the second).  The value is a string with a timestamp in ISO 8601 format to the second.\n\n If there is no due date, it is set to `null`.",
+            "description": "For competitions and ad hoc evaluations this may be set so that the benchmark performer must return a solution by the UTC due date (down to the second).  The value is a string with a timestamp in ISO 8601 format to the second.\n\n If there is no due date, it is set to `null`.",
             "oneOf": [
                 {
-                    "type": "string"
+                    "description": "Timestamp in ISO 8601 format to the second in UTC (note the `Z`).",
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]d{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                 },
                 {
                     "type": "null"
@@ -90,7 +93,7 @@
         },
         "superseded_by": {
             "title": "Successor Test Procedure",
-            "description": "If this benchmark instance is status:deprecated, this field lists the UUID of the successor test_procedure object.\nIf this test_procedure is NOT deprecated, then the value is set to null.",
+            "description": "If this problem instance is status:deprecated, this field lists the UUID of the successor test_procedure object.\nIf this test_procedure is NOT deprecated, then the value is set to null.",
             "oneOf": [
                 {
                     "type": "string",
@@ -101,8 +104,8 @@
                 }
             ]
         },
-        "benchmark_type": {
-            "title": "Benchmark Type",
+        "problem_type": {
+            "title": "Problem Type",
             "description": "Choose from the following:\n\nGSEE\nQUANTUM_DYNAMICS\nDIFFERENTIAL_EQUATIONS\nOTHER",
             "type": "string",
             "enum": [
@@ -114,7 +117,7 @@
         },
         "application_domain": {
             "title": "Application Domain",
-            "description": "Domain of the Benchmark Instance.  Choose from the following:\n\nCM: Condense Matter\nQC: Quantum Chemistry\nQB: Quantum Biochemistry\nBIO: Biology/Biomedical\nENG: Engineering\nFLP: Fluids/Plasmas\nOPT: Optimization\nDML: Data and Machine Learning\nHEP: High-Energy and Fundamental Physics",
+            "description": "Domain of the Problem Instance.  Choose from the following:\n\nCM: Condense Matter\nQC: Quantum Chemistry\nQB: Quantum Biochemistry\nBIO: Biology/Biomedical\nENG: Engineering\nFLP: Fluids/Plasmas\nOPT: Optimization\nDML: Data and Machine Learning\nHEP: High-Energy and Fundamental Physics",
             "type": "string",
             "enum": [
                 "CM",
