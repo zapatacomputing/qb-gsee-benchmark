@@ -5,7 +5,7 @@
     "description": "Describes required fields for a valid solution file.",
     "required": [
         "solution_uuid",
-        "benchmark_instance_uuid",
+        "problem_instance_uuid",
         "short_name",
         "creation_timestamp",
         "contact_info",
@@ -22,9 +22,9 @@
             "type": "string",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "benchmark_instance_uuid": {
-            "title": "Benchmark Instance UUID",
-            "description": "The UUID of the benchmark instance that the solution is based on.",
+        "problem_instance_uuid": {
+            "title": "Problem Instance UUID",
+            "description": "The UUID of the problem instance that the solution is based on.",
             "type": "string",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },

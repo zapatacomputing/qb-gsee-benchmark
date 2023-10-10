@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/jp7745/qb-file-schemas/main/schemas/logical_circuit.schema.0.0.1.json",
     "logical_circuit_uuid": "47d7e704-ed60-4844-8035-948acca08d4a",
-    "benchmark_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
+    "problem_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
     "creation_timestamp": "2023-09-15T20:14:51Z",
     "short_name": "qpe_C6H6",
     "contact_info": [
