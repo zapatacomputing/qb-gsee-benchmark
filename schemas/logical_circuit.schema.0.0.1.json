@@ -27,9 +27,9 @@
         },
         "creation_timestamp": {
             "title": "Creation Timestamp",
-            "description": "Timestamp in ISO 8601 format to the second in UTC (note the `Z`).",
+            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
             "type": "string",
-            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]d{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
         },
         "short_name": {
             "title": "Short Name",

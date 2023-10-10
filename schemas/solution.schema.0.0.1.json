@@ -30,8 +30,9 @@
         },
         "creation_timestamp": {
             "title": "Creation Timestamp",
-            "description": "Timestamp in ISO 8601 format to the second.",
-            "type": "string"
+            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
         },
         "short_name": {
             "title": "Short Name",
@@ -80,7 +81,7 @@
         },
         "run_time": {
             "title": "Wall Clock Runtime",
-            "description": "A breakdown of start/stop wall clock time(s) reported according to ISO 8601 and duration in seconds.  run_time is broken down into (1) overall_time, (2) preprocessing_time, (3), algorithm_run_time, and (4) postprocessing_time.  See descriptions of each object.",
+            "description": "A breakdown of start/stop wall clock time(s) reported according to ISO 8601 in UTC and duration in seconds.  run_time is broken down into (1) overall_time, (2) preprocessing_time, (3), algorithm_run_time, and (4) postprocessing_time.  See descriptions of each object.",
             "type": "object",
             "required": [
                 "overall_time",
@@ -101,13 +102,15 @@
                     "properties": {
                         "wall_clock_start_time": {
                             "title": "Wall Clock Start Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "wall_clock_stop_time": {
                             "title": "Wall Clock Stop Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "seconds": {
                             "title": "Duration in Seconds",
@@ -128,13 +131,15 @@
                     "properties": {
                         "wall_clock_start_time": {
                             "title": "Wall Clock Start Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "wall_clock_stop_time": {
                             "title": "Wall Clock Stop Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "seconds": {
                             "title": "Duration in Seconds",
@@ -155,13 +160,15 @@
                     "properties": {
                         "wall_clock_start_time": {
                             "title": "Wall Clock Start Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "wall_clock_stop_time": {
                             "title": "Wall Clock Stop Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "seconds": {
                             "title": "Duration in Seconds",
@@ -186,13 +193,15 @@
                     "properties": {
                         "wall_clock_start_time": {
                             "title": "Wall Clock Start Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "wall_clock_stop_time": {
                             "title": "Wall Clock Stop Time",
-                            "description": "An ISO 8601 timestamp",
-                            "type": "string"
+                            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).",
+                            "type": "string",
+                            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.\\[0-9]+)?Z$"
                         },
                         "seconds": {
                             "title": "Duration in Seconds",
