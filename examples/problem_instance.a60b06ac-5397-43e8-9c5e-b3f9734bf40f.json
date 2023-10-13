@@ -21,6 +21,7 @@
             },
             "features":{
                 "comment":"Supplemental information about the problem features that drive the construction of the Hamiltonian",
+                "software_used":"awesome-chemistry-software-version-2.0",
                 "molecule_name": "TiN",
                 "basis_set": "def2-svp",
                 "geometry": [
@@ -69,6 +70,7 @@
             },
             "features":{
                 "comment":"Supplemental information about the problem features that drive the construction of the Hamiltonian",
+                "software_used":"awesome-chemistry-software-version-2.0",
                 "molecule_name": "TiN",
                 "basis_set": "def2-svp",
                 "geometry": [
@@ -117,6 +119,7 @@
             },
             "features":{
                 "comment":"Supplemental information about the problem features that drive the construction of the Hamiltonian",
+                "software_used":"awesome-chemistry-software-version-2.0",
                 "molecule_name": "TiN",
                 "basis_set": "def2-svp",
                 "geometry": [
