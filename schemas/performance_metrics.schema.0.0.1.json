@@ -10,9 +10,8 @@
         "short_name",
         "performance_metrics_calculator_details",
         "creation_timestamp",
-        "solution_submitted_by_due_date",
-        "solution_calculated_within_time_limit",
-        "performance_metrics"
+        "itemized_metrics",
+        "aggregate_metrics"
     ],
     "properties": {
         "performance_metrics_uuid": {
@@ -49,19 +48,44 @@
             "description": "Information on the type/version and attribution of the software used to evaluate the solution file and produce the performance metrics.",
             "type": "object"
         },
-        "solution_calculated_within_time_limit": {
-            "title": "Solution Calculated Within Time Limit?",
-            "description": "A boolean to identify if the solution was calculated within the required time limit.",
-            "type": "boolean"
-        },
-        "solution_submitted_by_due_date": {
-            "title": "Solution Within Due Date?",
-            "description": "A boolean to identify if the solution was submitted by the required due date.  If there was no due date specified, then this is `true`.",
-            "type": "boolean"
-        },
-        "performance_metrics": {
-            "title": "Performance Metrics Object",
+        "itemized_metrics": {
+            "title": "Metrics Object",
             "description": "An object holding the various performance metrics calculated.  The exact structure is TBD and will change based on type of problem (GSEE, QUANTUM_DYNAMICS, DIFFERENTIAL_EQUATIONS, etc).",
+            "type": "array",
+            "items":{
+                "type": "object",
+                "required":[
+                    "instance_data_object_uuid",
+                    "solution_calculated_within_time_limit",
+                    "solution_submitted_by_due_date",
+                    "metrics"
+                ],
+                "properties":{
+                    "instance_data_object_uuid":{
+                        "title": "Instance Data Object UUID",
+                        "description": "The UUID of the related instance data.  A string in 8-4-4-4-12 format.",
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                    },
+                    "solution_calculated_within_time_limit": {
+                        "title": "Solution Calculated Within Time Limit?",
+                        "description": "A boolean to identify if the solution was calculated within the required time limit.",
+                        "type": "boolean"
+                    },
+                    "solution_submitted_by_due_date": {
+                        "title": "Solution Within Due Date?",
+                        "description": "A boolean to identify if the solution was submitted by the required due date.  If there was no due date specified, then this is `true`.",
+                        "type": "boolean"
+                    },
+                    "metrics":{
+
+                    }
+                }
+            }               
+        },
+        "aggregate_metrics":{
+            "title": "Metrics Object",
+            "description": "An object holding the various aggregate metrics and ancillary outputs. metrics calculated.  The exact structure is TBD and will change based on type of problem (GSEE, QUANTUM_DYNAMICS, DIFFERENTIAL_EQUATIONS, etc).",
             "type": "object"
         }
     }

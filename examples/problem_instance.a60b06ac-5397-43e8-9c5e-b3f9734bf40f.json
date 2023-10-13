@@ -5,46 +5,153 @@
     "application_domain": "QC",
     "calendar_due_date": null,
     "creation_timestamp":"2022-12-25T07:18:45Z",
-    "short_name": "1.5_C6H6",
+    "short_name": "Titanium_Nitride_family",
     "instance_data": [
         {
-            "comment": "second quantized hamiltonian in HDF5 format.",
-            "instance_data_url": "https://this-example-link-doesnt-work-yet",
+            "comment":"This is Hamiltonian 1 of 3 for the problem_instance. Note the independent_parameters being varied.",
+            "comment2": "second quantized hamiltonian in HDF5 format.",
+            "instance_data_object_uuid": "55f1972b-6f97-46db-8c86-36c820cd1c70",
+            "instance_data_object_url": "https://this-example-link-doesnt-work-yet",
             "instance_data_checksum_type": "sha1sum",
-            "instance_data_checksum": "ae340787b68dfc0b5cf27fc68ed1f8790e2217d5"
+            "instance_data_checksum": "ae340787b68dfc0b5cf27fc68ed1f8790e2217d5",
+            "independent_parameters":{
+                "comment":"For the *family* of Hamiltonians in this problem_instance, this is a list of the parameters that are being searched over.",
+                "comment2":"(Optional) After calculating the GSE for all Hamiltonians listed in this problem_instance a surface plot over the independent_parameters may be produced.",
+                "bond_length_angstroms":2.0
+            },
+            "features":{
+                "comment":"Supplemental information about the problem features that drive the construction of the Hamiltonian",
+                "molecule_name": "TiN",
+                "basis_set": "def2-svp",
+                "geometry": [
+                    {
+                        "element":"Ti",
+                        "coordinates":[0.0, 0.0, 0.0]
+                    },
+                    {
+                        "element":"N",
+                        "coordinates":[0.0, 0.0, 3.12256]
+                    }
+                ],
+                "charge": 0,
+                "multiplicity": 2,
+                "avas_atomic_orbitals": [
+                    {
+                        "element":"Ti",
+                        "orbitals":["4s", "3d"]
+                    },
+                    {
+                        "element":"N",
+                        "orbitals":["2s", "2p"]
+                    }
+                ],
+                "avas_minao": "STO-3G",
+                "method_type":"CC"
+            },
+            "requirements": {
+                "comment":"Ground state energy must be calculated within stated accuracy within stated time_limit_seconds",
+                "time_limit_seconds": 86400,
+                "accuracy": 1.0,
+                "enery_units": "kcal/mol"
+            }
+        },
+        {
+            "comment":"This is Hamiltonian 2 of 3 for the problem_instance.  Note the independent_parameters being varied.",
+            "comment2": "second quantized hamiltonian in HDF5 format.",
+            "instance_data_object_uuid": "24eae2a7-50e9-4631-9f61-0f463687e1d5",
+            "instance_data_object_url": "https://this-example-link-doesnt-work-yet",
+            "instance_data_checksum_type": "sha1sum",
+            "instance_data_checksum": "44440787b68dfc0b5cf27fc68ed1f8790e224444",
+            "independent_parameters":{
+                "comment":"For the *family* of Hamiltonians in this problem_instance, this is a list of the parameters that are being searched over.",
+                "comment2":"(Optional) After calculating the GSE for all Hamiltonians listed in this problem_instance, a surface plot over the independent_parameters may be produced.",
+                "bond_length_angstroms":1.5
+            },
+            "features":{
+                "comment":"Supplemental information about the problem features that drive the construction of the Hamiltonian",
+                "molecule_name": "TiN",
+                "basis_set": "def2-svp",
+                "geometry": [
+                    {
+                        "element":"Ti",
+                        "coordinates":[0.0, 0.0, 0.0]
+                    },
+                    {
+                        "element":"N",
+                        "coordinates":[0.0, 0.0, 2.34192]
+                    }
+                ],
+                "charge": 0,
+                "multiplicity": 2,
+                "avas_atomic_orbitals": [
+                    {
+                        "element":"Ti",
+                        "orbitals":["4s", "3d"]
+                    },
+                    {
+                        "element":"N",
+                        "orbitals":["2s", "2p"]
+                    }
+                ],
+                "avas_minao": "STO-3G",
+                "method_type":"CC"
+            },
+            "requirements": {
+                "comment":"Ground state energy must be calculated within stated accuracy within stated time_limit_seconds",
+                "time_limit_seconds": 86400,
+                "accuracy": 1.0,
+                "enery_units": "kcal/mol"
+            }
+        },
+        {
+            "comment":"This is Hamiltonian 3 of 3 for the problem_instance.  Note the independent_parameters being varied.",
+            "comment2": "second quantized hamiltonian in HDF5 format.",
+            "instance_data_object_uuid": "b41085cd-d702-4948-bc70-a30b62abe73b",
+            "instance_data_object_url": "https://this-example-link-doesnt-work-yet-3of3",
+            "instance_data_checksum_type": "sha1sum",
+            "instance_data_checksum": "33330787b68dfc0b5cf27fc68ed1f8790e223333",
+            "independent_parameters":{
+                "comment":"For the *family* of Hamiltonians in this problem_instance, this is a list of the parameters that are being searched over.",
+                "comment2":"(Optional) After calculating the GSE for all Hamiltonians listed in this problem_instance, a surface plot over the independent_parameters may be produced.",
+                "bond_length_angstroms":1.0
+            },
+            "features":{
+                "comment":"Supplemental information about the problem features that drive the construction of the Hamiltonian",
+                "molecule_name": "TiN",
+                "basis_set": "def2-svp",
+                "geometry": [
+                    {
+                        "element":"Ti",
+                        "coordinates":[0.0, 0.0, 0.0]
+                    },
+                    {
+                        "element":"N",
+                        "coordinates":[0.0, 0.0, 1.56128]
+                    }
+                ],
+                "charge": 0,
+                "multiplicity": 2,
+                "avas_atomic_orbitals": [
+                    {
+                        "element":"Ti",
+                        "orbitals":["4s", "3d"]
+                    },
+                    {
+                        "element":"N",
+                        "orbitals":["2s", "2p"]
+                    }
+                ],
+                "avas_minao": "STO-3G",
+                "method_type":"CC"
+            },
+            "requirements": {
+                "comment":"Ground state energy must be calculated within stated accuracy within stated time_limit_seconds",
+                "time_limit_seconds": 86400,
+                "accuracy": 1.0,
+                "enery_units": "kcal/mol"
+            }
         }
     ],
-    "instance_features": {
-        "molecule_name": "C6H6",
-        "basis_set": "sto-6g",
-        "geometry": [
-            "C -6.0e-5 2.12148 0.0",
-            "C -1.83706 1.06063 0.0",
-            "C -1.83704 -1.06068 0.0",
-            "C -0.0 -2.12148 -0.0",
-            "C 1.83702 -1.06066 -0.0",
-            "C 1.83695 1.06063 0.0",
-            "H 8.0e-5 3.22565 0.0",
-            "H -2.7933 1.61272 0.0",
-            "H -2.79333 -1.61268 0.0",
-            "H 0.00011 -3.22565 0.0",
-            "H 2.79329 -1.61268 0.0",
-            "H 2.79321 1.61268 0.0"
-        ],
-        "charge": 0,
-        "multiplicity": 1,
-        "avas_atomic_orbitals": [
-            "H 1s",
-            "C 2s",
-            "C 2p"
-        ],
-        "avas_minao": "STO-3G"
-    },
-    "problem_requirements": {
-        "time_limit_seconds": 86400,
-        "accuracy": 1,
-        "measure_units": "kcal/mol"
-    },
     "status": "in_force",
     "superseded_by": null,
     "contact_info": [

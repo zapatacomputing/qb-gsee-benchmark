@@ -3,7 +3,7 @@
     "creation_timestamp": "2023-09-14T18:14:51Z",
     "solution_uuid": "a4bf69c5-d542-47ad-a8ea-fde60fe59a2f",
     "problem_instance_uuid": "a60b06ac-5397-43e8-9c5e-b3f9734bf40f",
-    "short_name": "1.5_C6H6_solution",
+    "short_name": "Titanium_Nitride_family_solution",
     
     "contact_info": [
         {
@@ -25,7 +25,124 @@
     ],
     "solution_data": [
         {
-            "enthalpy_kcal_per_mol": 11.64
+            "instance_data_object_uuid":"b41085cd-d702-4948-bc70-a30b62abe73b",
+            "energy": 11.640,
+            "enery_units": "kcal/mol",
+            "independent_parameters":{
+                "bond_length_angstroms":1.0
+            },
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:11.146Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:16.088Z",
+                    "seconds": 604.942
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:11.146Z",
+                    "wall_clock_stop_time": "2023-09-14T19:15:12.845Z",
+                    "seconds": 1.699
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:13.055Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:14.004Z",
+                    "seconds": 600.949,
+                    "compute_node_run_time_breakdown": [
+                        {
+                            "name": "hostname_1",
+                            "seconds": 599.450
+                        },
+                        {
+                            "name": "hostname_2",
+                            "seconds": 510.500
+                        }
+                    ]
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "2023-09-14T19:25:15.511Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:16.088Z",
+                    "seconds": 0.577
+                }
+            }
+        },
+        {
+            "instance_data_object_uuid":"24eae2a7-50e9-4631-9f61-0f463687e1d5",
+            "energy": 9.003,
+            "enery_units": "kcal/mol",
+            "independent_parameters":{
+                "bond_length_angstroms":1.5
+            },
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:11.146Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:16.088Z",
+                    "seconds": 604.942
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:11.146Z",
+                    "wall_clock_stop_time": "2023-09-14T19:15:12.845Z",
+                    "seconds": 1.699
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:13.055Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:14.004Z",
+                    "seconds": 600.949,
+                    "compute_node_run_time_breakdown": [
+                        {
+                            "name": "hostname_1",
+                            "seconds": 599.450
+                        },
+                        {
+                            "name": "hostname_2",
+                            "seconds": 510.500
+                        }
+                    ]
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "2023-09-14T19:25:15.511Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:16.088Z",
+                    "seconds": 0.577
+                }
+            }
+        },
+        {
+            "instance_data_object_uuid":"55f1972b-6f97-46db-8c86-36c820cd1c70",
+            "energy": 8.475,
+            "enery_units": "kcal/mol",
+            "independent_parameters":{
+                "bond_length_angstroms":2.0    
+            },
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:11.146Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:16.088Z",
+                    "seconds": 604.942
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:11.146Z",
+                    "wall_clock_stop_time": "2023-09-14T19:15:12.845Z",
+                    "seconds": 1.699
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "2023-09-14T19:15:13.055Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:14.004Z",
+                    "seconds": 600.949,
+                    "compute_node_run_time_breakdown": [
+                        {
+                            "name": "hostname_1",
+                            "seconds": 599.450
+                        },
+                        {
+                            "name": "hostname_2",
+                            "seconds": 510.500
+                        }
+                    ]
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "2023-09-14T19:25:15.511Z",
+                    "wall_clock_stop_time": "2023-09-14T19:25:16.088Z",
+                    "seconds": 0.577
+                }
+            }
         }
     ],
     "compute_details": {
@@ -64,37 +181,5 @@
         }
     },
     "compute_hardware_type": "classical_computer",
-    "digital_signature": null,
-    "run_time": {
-        "overall_time": {
-            "wall_clock_start_time": "2023-09-14T19:15:11.146",
-            "wall_clock_stop_time": "2023-09-14T19:25:16.088",
-            "seconds": 604.942
-        },
-        "preprocessing_time": {
-            "wall_clock_start_time": "2023-09-14T19:15:11.146",
-            "wall_clock_stop_time": "2023-09-14T19:15:12.845",
-            "seconds": 1.699
-        },
-        "algorithm_run_time": {
-            "wall_clock_start_time": "2023-09-14T19:15:13.055",
-            "wall_clock_stop_time": "2023-09-14T19:25:14.004",
-            "seconds": 600.949,
-            "compute_node_run_time_breakdown": [
-                {
-                    "name": "hostname_1",
-                    "seconds": 599.450
-                },
-                {
-                    "name": "hostname_2",
-                    "seconds": 510.500
-                }
-            ]
-        },
-        "postprocessing_time": {
-            "wall_clock_start_time": "2023-09-14T19:25:15.511",
-            "wall_clock_stop_time": "2023-09-14T19:25:16.088",
-            "seconds": 0.577
-        }
-    }
+    "digital_signature": null
 }

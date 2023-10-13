@@ -11,10 +11,8 @@
         "contact_info",
         "problem_type",
         "instance_data",
-        "instance_features",
         "status",
         "superseded_by",
-        "problem_requirements",
         "application_domain"
     ],
     "properties": {
@@ -136,7 +134,61 @@
             "description": "A list of objects describing the required data.  Exact structure is TDB.  For large instances, a URL to the data is given.",
             "type": "array",
             "items": {
-                "type": "object"
+                "type": "object",
+                "required":[
+                    "instance_data_object_uuid",
+                    "instance_data_object_url",
+                    "instance_data_checksum_type",
+                    "instance_data_checksum",
+                    "requirements"
+                ],
+                "optional":[
+                    "independent_parameters",
+                    "features"
+                ],
+                "properties":{
+                    "instance_data_object_uuid":{
+                        "title":"Instance Data Object UUID",
+                        "description":"TODO: description",
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                    },
+                    "instance_data_object_url":{
+                        "title":"Instance Data Object URL",
+                        "type":"string",
+                        "description":"TODO: description"
+                    },
+                    "instance_data_checksum_type":{
+                        "title": "Instance Data Checksum Type",
+                        "description": "One of \n\n`sha1sum`\n`sha256sum`\n`md5sum`",
+                        "type": "string",
+                        "enum": [
+                            "sha1sum",
+                            "sha256sum",
+                            "md5sum"
+                        ]
+                    },
+                    "instance_data_checksum":{
+                        "title":"Instance Data Checksum String",
+                        "description":"a string containing the checksum of the data file.",
+                        "type":"string"
+                    },
+                    "requirements":{
+                        "title":"Performance Requirements",
+                        "description":"an object containing the accuracy, precision and runtime requirements for the benchmark.",
+                        "type":"object"                        
+                    },
+                    "independent_parameters":{
+                        "title":"Independent Parameters",
+                        "description":"[OPTIONAL] A list of parameters that are being varied over the family of Hamiltonians.",
+                        "type":"object"
+                    },
+                    "features":{
+                        "title":"Features of the Instance",
+                        "description":"[OPTIONAL] Supplemental information about the problem features that drive the construction of the Hamiltonian.  TODO: we may define this structure more.",
+                        "type":"object"
+                    }
+                }
             }
         },
         "instance_features": {
