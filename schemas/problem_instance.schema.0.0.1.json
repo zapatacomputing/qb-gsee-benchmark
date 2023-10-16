@@ -13,9 +13,15 @@
         "instance_data",
         "status",
         "superseded_by",
-        "application_domain"
+        "application_domain",
+        "$schema"
     ],
     "properties": {
+        "$schema": {
+            "title": "Schema URI",
+            "desription": "A hyperlink to the schema that describes this JSON object.",
+            "type": "string"
+        },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
             "description": "The UUID of the problem instance as a string in 8-4-4-4-12 format.",

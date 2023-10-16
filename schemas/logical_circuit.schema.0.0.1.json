@@ -10,9 +10,15 @@
         "creation_timestamp",
         "contact_info",
         "circuit_generation_software_details",
-        "logical_circuit_details"
+        "logical_circuit_details",
+        "$schema"
     ],
     "properties": {
+        "$schema": {
+            "title": "Schema URI",
+            "desription": "A hyperlink to the schema that describes this JSON object.",
+            "type": "string"
+        },
         "logical_circuit_uuid": {
             "title": "Solution UUID",
             "description": "The UUID of the solution being submitted as a string in 8-4-4-4-12 format.",

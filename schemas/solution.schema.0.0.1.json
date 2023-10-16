@@ -12,9 +12,15 @@
         "solution_data",
         "compute_hardware_type",
         "compute_details",
-        "digital_signature"
+        "digital_signature",
+        "$schema"
     ],
     "properties": {
+        "$schema": {
+            "title": "Schema URI",
+            "desription": "A hyperlink to the schema that describes this JSON object.",
+            "type": "string"
+        },
         "solution_uuid": {
             "title": "Solution UUID",
             "description": "The UUID of the solution being submitted as a string in 8-4-4-4-12 format.",

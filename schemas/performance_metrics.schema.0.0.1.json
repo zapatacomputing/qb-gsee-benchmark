@@ -11,9 +11,15 @@
         "performance_metrics_calculator_details",
         "creation_timestamp",
         "itemized_metrics",
-        "aggregate_metrics"
+        "aggregate_metrics",
+        "$schema"
     ],
     "properties": {
+        "$schema": {
+            "title": "Schema URI",
+            "desription": "A hyperlink to the schema that describes this JSON object.",
+            "type": "string"
+        },
         "performance_metrics_uuid": {
             "title": "Performance Metrics UUID",
             "description": "The UUID of the performance metrics file as a string in 8-4-4-4-12 format.",
