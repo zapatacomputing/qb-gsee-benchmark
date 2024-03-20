@@ -21,8 +21,12 @@
         "$schema": {
             "title": "Schema URI",
             "desription": "A hyperlink to the schema that describes this JSON object.",
-            "type": "string",
-            "format": "uri"
+            "type": "string"
+        },
+        "references":{
+            "title": "References (list)",
+            "description": "A list of citations or references for the problem instance or data.",
+            "type": "object"
         },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
@@ -70,14 +74,13 @@
                 },
                 "url": {
                     "title": "URL for License",
-                    "type": "string",
-                    "format": "uri"
+                    "type": "string"
                 }
             }
         },
         "contact_info": {
             "title": "Point of Contact(s)",
-            "description": "A list of name/email/institution objects.",
+            "description": "A list of name/email/institution objects. Email is optional.",
             "type": "array",
             "items": {
                 "type": "object",
@@ -92,8 +95,7 @@
                     },
                     "email": {
                         "title": "Email",
-                        "type": "string",
-                        "format": "email"
+                        "type": "string"
                     },
                     "institution": {
                         "title": "Institution/Organization",
