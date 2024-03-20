@@ -24,9 +24,9 @@
             "type": "string"
         },
         "references":{
-            "title": "References (list)",
+            "title": "References",
             "description": "A list of citations or references for the problem instance or data.",
-            "type": "list"
+            "type": "array"
         },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
