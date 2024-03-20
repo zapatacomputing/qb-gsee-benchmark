@@ -21,7 +21,8 @@
         "$schema": {
             "title": "Schema URI",
             "desription": "A hyperlink to the schema that describes this JSON object.",
-            "type": "string"
+            "type": "string",
+            "format": "uri"
         },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
@@ -69,7 +70,8 @@
                 },
                 "url": {
                     "title": "URL for License",
-                    "type": "uri"
+                    "type": "string",
+                    "format": "uri"
                 }
             }
         },
@@ -90,7 +92,8 @@
                     },
                     "email": {
                         "title": "Email",
-                        "type": "email"
+                        "type": "string",
+                        "format": "email"
                     },
                     "institution": {
                         "title": "Institution/Organization",
