@@ -14,7 +14,8 @@
         "status",
         "superseded_by",
         "application_domain",
-        "license"
+        "license",
+        "$schema"
     ],
     "properties": {
         "$schema": {
@@ -24,7 +25,7 @@
         },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
-            "description": "The UUID of the problem instance as a string in RFC4122 8-4-4-4-12 format.",
+            "description": "Universally Unique Identifier (UUID) as a string in RFC4122 8-4-4-4-12 format.",
             "type": "string",
             "format": "uuid",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
@@ -119,7 +120,8 @@
             "oneOf": [
                 {
                     "type": "string",
-                    "format": "uuid"
+                    "format": "uuid",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
                 },
                 {
                     "type": "null"
@@ -173,9 +175,10 @@
                 "properties":{
                     "instance_data_object_uuid":{
                         "title":"Instance Data Object UUID",
-                        "description":"TODO: description",
+                        "description": "Universally Unique Identifier (UUID) as a string in RFC4122 8-4-4-4-12 format.",
                         "type": "string",
-                        "format": "uuid"
+                        "format": "uuid",
+                        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
                     },
                     "instance_data_object_url":{
                         "title":"Instance Data Object URL",
