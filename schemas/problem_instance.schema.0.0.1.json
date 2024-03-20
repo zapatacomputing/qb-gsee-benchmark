@@ -26,7 +26,7 @@
         "references":{
             "title": "References (list)",
             "description": "A list of citations or references for the problem instance or data.",
-            "type": "object"
+            "type": "list"
         },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
