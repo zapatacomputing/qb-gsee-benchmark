@@ -14,7 +14,7 @@
         "status",
         "superseded_by",
         "application_domain",
-        "$schema"
+        "license"
     ],
     "properties": {
         "$schema": {
@@ -24,24 +24,25 @@
         },
         "problem_instance_uuid": {
             "title": "Problem Instance UUID",
-            "description": "The UUID of the problem instance as a string in 8-4-4-4-12 format.",
+            "description": "The UUID of the problem instance as a string in RFC4122 8-4-4-4-12 format.",
             "type": "string",
+            "format": "uuid",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "creation_timestamp": {
             "title": "Creation Timestamp",
-            "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).\n\nExamples:  \n`2022-12-25T18:00:02.223Z`,\n`2022-12-25T07:18:45Z`",
+            "description": "Timestamp in ISO 8601 format.",
             "type": "string",
-            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"
+            "format": "date-time"
         },
         "calendar_due_date": {
             "title": "Calendar Due Date",
             "description": "For competitions and ad hoc evaluations this may be set so that the benchmark performer must return a solution by the UTC due date.  The value is a string with a timestamp in ISO 8601 format.\n\n If there is no due date, it is set to `null`.",
             "oneOf": [
                 {
-                    "description": "Timestamp in ISO 8601 format in UTC (note the `Z`).\n\nExamples:  \n`2022-12-25T18:00:02.223Z`,\n`2022-12-25T07:18:45Z`",
+                    "description": "Timestamp in ISO 8601 format",
                     "type": "string",
-                    "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"
+                    "format": "date-time"
                 },
                 {
                     "type": "null"
@@ -53,6 +54,24 @@
             "description": "A short string.  Not necessarily unique.",
             "type": "string"
         },
+        "license":{
+            "title": "License",
+            "description": "object",
+            "required": [
+                "name",
+                "url"
+            ],
+            "properties":{
+                "name": {
+                    "title": "Name of License",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "URL for License",
+                    "type": "uri"
+                }
+            }
+        },
         "contact_info": {
             "title": "Point of Contact(s)",
             "description": "A list of name/email/institution objects.",
@@ -61,7 +80,6 @@
                 "type": "object",
                 "required": [
                     "name",
-                    "email",
                     "institution"
                 ],
                 "properties": {
@@ -71,7 +89,7 @@
                     },
                     "email": {
                         "title": "Email",
-                        "type": "string"
+                        "type": "email"
                     },
                     "institution": {
                         "title": "Institution/Organization",
@@ -101,7 +119,7 @@
             "oneOf": [
                 {
                     "type": "string",
-                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                    "format": "uuid"
                 },
                 {
                     "type": "null"
@@ -157,7 +175,7 @@
                         "title":"Instance Data Object UUID",
                         "description":"TODO: description",
                         "type": "string",
-                        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                        "format": "uuid"
                     },
                     "instance_data_object_url":{
                         "title":"Instance Data Object URL",
