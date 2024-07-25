@@ -25,14 +25,15 @@ git clone https://github.com/yourusername/qb-gsee-benchmark.git
 cd qb-gsee-benchmark
 ```
 
-<! ### Requirements
+<!---
+### Requirements
 
 - Python 3.7+
 - Necessary Python packages can be installed via:
 ```bash
 pip install -r requirements.txt
 ```
->
+--->
 ## Usage
 
 1. **Prepare the Data**:
