@@ -26,6 +26,7 @@ def compute_hypergraph_metrics(pauli_hamiltonian):
         for node in edge:
             vertex_degree[node] += 1
 
+
     weight_stats = {
             "max_weight": np.max(weights),
             "min_weight": np.min(weights),
@@ -50,13 +51,5 @@ def compute_hypergraph_metrics(pauli_hamiltonian):
         "std_dev_edge_order": np.std(edge_orders)
     }
 
-    # Combine all statistics into one dictionary
-    all_stats = {
-        "weight_stats": weight_stats,
-        "vertex_degree_stats": vertex_degree_stats,
-        "edge_order_stats": edge_order_stats
-    }
 
-    # Print the combined statistics
-    print("Combined Statistics:")
-    print(all_stats)
+    return vertex_degree_stats, weight_stats, edge_order_stats

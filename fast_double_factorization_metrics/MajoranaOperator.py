@@ -81,12 +81,17 @@ class MajoranaOperator(GeneralOperator):
             pauli_letters, coeff = jw.get_jw_paulis(majorana_ints, value)
 
             pauli_dict[tuple(pauli_letters)] = coeff
+        one_norm = 0.0
+        pauli_terms = 0
+
+        for pauli_letters, coeff in pauli_dict.items():
+            one_norm += abs(coeff)
+            pauli_terms += 1
 
         if use_openfermion:
             H_op = QubitOperator(term=None)
             for pauli_letters, coeff in pauli_dict.items():
                 H_op += QubitOperator(pauli_letters, coeff)
-
             return H_op
 
-        return pauli_dict
+        return pauli_dict, one_norm, pauli_terms
