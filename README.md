@@ -8,7 +8,7 @@ QB-GSEE-Benchmark is a comprehensive suite for benchmarking Ground State Energy 
 
 ![test](figures/metric_plot.png)
 
-![test](figures/df_eigen_plot.png)
+![test](figures/df_eigen_metrics.png)
 
 
 ## License
