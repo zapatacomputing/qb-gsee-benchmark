@@ -1,8 +1,7 @@
 ################################################################################
 # © Copyright 2024 Zapata Computing Inc.
 ################################################################################
-
-
+import numpy as np
 from openfermion import MolecularData
 from openfermion.resource_estimates.molecule import cas_to_pyscf
 from openfermionpyscf import PyscfMolecularData
@@ -80,12 +79,73 @@ def get_chemical_hamiltonian(fci) -> ChemicalHamiltonian:
     return ChemicalHamiltonian(mol_ham=interaction_op, mol_name="H2")
 
 
+def get_num_shots(square_overlap: float, failure_tolerance: float):
+    """Get the number of QPE shots required to achieve a given eigenstate projection
+     failure tolerance.
+
+    Corresponds to Eq. 15 in arXiv:2406.06335v1.
+
+    Args:
+        square_overlap: The square overlap between the target state and the initial
+            state.
+        failure_tolerance: The allowable probability that none of the shots projects on
+            to the target state.
+    """
+    assert (
+        square_overlap >= 0 and square_overlap <= 1
+    ), "Square overlap must be in [0, 1]"
+    return np.ceil(np.log(failure_tolerance) / np.log(1 - square_overlap))
+
+
+def get_hardware_failure_tolerance_per_shot(failure_tolerance: float, num_shots: int):
+    """Get the allowable hardware failure rate per shot.
+
+    Corresponds to Eq. 18 in arXiv:2406.06335v1.
+
+    Args:
+        num_shots: The number of shots.
+        failure_tolerance: The allowable probability that none of the shots experiences
+            an (uncorrected) hardware error.
+    """
+    return 1 - (1 - failure_tolerance) ** (1 / num_shots)
+
+
 def get_df_qpe_circuit(
-    fci: dict, target_accuracy: float, allowable_failure_rate: float
+    fci: dict, square_overlap: float, error_tolerance: float, failure_tolerance: float
 ):
+    """Get the QPE circuit for a given PySCF FCI object.
+
+    Args:
+        fci: The FCI object, i.e. what you get from loading a pyscf fcidump.
+        square_overlap: The square overlap between the target state and the initial
+            state.
+        error_tolerance: The desired error in the energy estimation.
+        failure_tolerance: The allowable probability that the absolute energy error
+            exceeds the error tolerance.
+
+    Returns:
+        A tuple containing the QPE circuit, the number of shots, and the allowable
+            hardware failure rate per shot.
+    """
+    phase_estimation_failure_tolerance = failure_tolerance * 0.8
+    state_projection_failure_tolerance = failure_tolerance * 0.1
+    hardware_failure_tolerance = failure_tolerance * 0.1
+
+    phase_estimation_error_tolerance = error_tolerance * 0.9
+    walk_operator_error_tolerance = error_tolerance * 0.1
+
+    num_shots = get_num_shots(square_overlap, state_projection_failure_tolerance)
+
     instance = get_chemical_hamiltonian(fci)
-    encoding = DoubleFactorized(instance=instance, prec=1e-10)
+    encoding = DoubleFactorized(
+        instance=instance, energy_error=walk_operator_error_tolerance * 10, prec=1e-10
+    )
     circuit = QubitizedPhaseEstimation(
         encoding,
     )
-    return circuit, 1000, 1e-3
+
+    hardware_failure_tolerance_per_shot = get_hardware_failure_tolerance_per_shot(
+        failure_tolerance=hardware_failure_tolerance, num_shots=num_shots
+    )
+
+    return circuit, num_shots, hardware_failure_tolerance_per_shot
