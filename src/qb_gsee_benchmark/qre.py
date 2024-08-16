@@ -1,9 +1,12 @@
 ################################################################################
 # © Copyright 2024 Zapata Computing Inc.
 ################################################################################
+from typing import Iterable, Optional
+
 import numpy as np
 from openfermion import MolecularData
-from openfermion.resource_estimates.molecule import cas_to_pyscf
+from openfermion.resource_estimates import df
+from openfermion.resource_estimates.molecule import cas_to_pyscf, factorized_ccsd_t
 from openfermionpyscf import PyscfMolecularData
 from openfermionpyscf._run_pyscf import compute_integrals
 from pyLIQTR.BlockEncodings.DoubleFactorized import DoubleFactorized
@@ -62,21 +65,67 @@ def _get_molecular_data(
     return molecular_data
 
 
-def get_chemical_hamiltonian(fci) -> ChemicalHamiltonian:
-    num_alpha = (fci["NELEC"] + fci["MS2"]) // 2
-    num_beta = num_alpha - fci["MS2"]
-    eri_full = ao2mo.restore("s1", fci["H2"], fci["H1"].shape[0])
+def choose_double_factorization_threshold(
+    meanfield_object: scf.hf.SCF,
+    eri_full: np.array,
+    candidate_thresholds: Iterable[float],
+    error_budget: float,
+    use_kernel=True,
+    use_triples=True,
+) -> tuple[int, float, float]:
+    """Choose the threshold for double-factorization that satisfies the error budget.
 
-    active_space_molecule, active_space_meanfield_object = cas_to_pyscf(
-        fci["H1"], eri_full, fci["ECORE"], num_alpha, num_beta
+    Note that this function requires that the _eri attribute of the meanfield object be
+        shaped as a four-index tensor.
+
+    Args:
+        meanfield_object: The mean-field object.
+        candidate_thresholds: The candidate thresholds.
+        error_budget: The energy error budget (Ha).
+        use_kernel: Whether to use the kernel.
+        use_triples: Whether to use the triples.
+
+    Returns:
+        The first threshold amongst the candidates that meets the energy error budget
+            as well as the energy error ERI L2 error for this threshold.
+
+    Raises:
+        ValueError: If none of the candidate thresholds meets the energy error budget.
+    """
+
+    escf, ecor, etot = factorized_ccsd_t(
+        meanfield_object, eri_rr=None, use_kernel=use_kernel, no_triples=not use_triples
     )
 
-    molecular_data = _get_molecular_data(
-        active_space_molecule, active_space_meanfield_object
-    )
+    exact_etot = etot
 
-    interaction_op = molecular_data.get_molecular_hamiltonian()
-    return ChemicalHamiltonian(mol_ham=interaction_op, mol_name="H2")
+    best_threshold: Optional[int] = None
+    for threshold in candidate_thresholds:
+        eri_rr, LR, L, Lxi = df.factorize(eri_full, threshold)
+
+        try:
+            escf, ecor, etot = factorized_ccsd_t(
+                meanfield_object,
+                eri_rr,
+                use_kernel=use_kernel,
+                no_triples=not use_triples,
+            )
+        except Exception as e:
+            print(f"Threshold {threshold} failed: {e}")
+
+        error = etot - exact_etot
+        l2_norm_error_eri = np.linalg.norm(
+            eri_rr - eri_full
+        )  # eri reconstruction error
+
+        print(
+            f"Threshold: {threshold}, error: {error}, eri L2 error: {l2_norm_error_eri}"
+        )
+
+        if np.abs(error) < error_budget:
+            return threshold, error, l2_norm_error_eri
+
+    raise ValueError("None of the thresholds provided satisfies the error budget.")
 
 
 def get_num_shots(square_overlap: float, failure_tolerance: float):
@@ -111,9 +160,17 @@ def get_hardware_failure_tolerance_per_shot(failure_tolerance: float, num_shots:
 
 
 def get_df_qpe_circuit(
-    fci: dict, square_overlap: float, error_tolerance: float, failure_tolerance: float
+    fci: dict,
+    square_overlap: float,
+    error_tolerance: float,
+    failure_tolerance: float,
+    candidate_thresholds: Optional[Iterable[float]] = None,
 ):
     """Get the QPE circuit for a given PySCF FCI object.
+
+    This uses an algorithm performance model based on that described in
+    arXiv:2406.06335v1 to account for the number of shots required to achieve the target
+    success probability.
 
     Args:
         fci: The FCI object, i.e. what you get from loading a pyscf fcidump.
@@ -127,22 +184,77 @@ def get_df_qpe_circuit(
         A tuple containing the QPE circuit, the number of shots, and the allowable
             hardware failure rate per shot.
     """
+    if candidate_thresholds is None:
+        candidate_thresholds = np.power(10.0, np.arange(-1, -6, -0.5))
+
+    # Allowed probability that spectral leakage causes the estimated energy to deviate
+    # from the true eigenvalue of the encoded Hamiltonian by more than
+    # phase_estimation_error_tolerance. Corresponds to \overline{\delta_{QPE}} in
+    # the paper.
     phase_estimation_failure_tolerance = failure_tolerance * 0.8
+
+    # Allowed probability that none of the shots projects into the ground state.
+    # Corresponds to \overline{\p_GS} in the paper.
     state_projection_failure_tolerance = failure_tolerance * 0.1
+
+    # Allowed probability that one or more shots experiences an (uncorrected) hardware
+    # error. Corresponds to \overline{delta_HW} in the paper.
     hardware_failure_tolerance = failure_tolerance * 0.1
 
-    phase_estimation_error_tolerance = error_tolerance * 0.9
-    walk_operator_error_tolerance = error_tolerance * 0.1
+    # Allowable error in the estimated energy due to spectral leakage. Corresponds to
+    # \overline{\epsilon_{SL}} in the paper.
+    spectral_leakage_error_tolerance = error_tolerance * 0.9
+
+    # Allowable error in the energy due to the approximate nature of the block encoding.
+    # Corresponds to \overline{\epsilon_{BE}} in the paper.
+    block_encoding_error_tolerance = error_tolerance * 0.1
+
+    # The allowed standard deviation of the spectral leakage for a single shot in order
+    # to achieve the desired phase estimate failure rate based on the Chebyshev
+    # inequality. See Eq. 8 in the paper.
+    sigma = (
+        np.sqrt(phase_estimation_failure_tolerance) * spectral_leakage_error_tolerance
+    )
 
     num_shots = get_num_shots(square_overlap, state_projection_failure_tolerance)
 
-    instance = get_chemical_hamiltonian(fci)
+    num_alpha = (fci["NELEC"] + fci["MS2"]) // 2
+    num_beta = num_alpha - fci["MS2"]
+    eri_full = ao2mo.restore("s1", fci["H2"], fci["H1"].shape[0])
+
+    active_space_molecule, active_space_meanfield_object = cas_to_pyscf(
+        fci["H1"], eri_full, fci["ECORE"], num_alpha, num_beta
+    )
+
+    (
+        df_threshold,
+        df_energy_error,
+        df_eri_l2_error,
+    ) = choose_double_factorization_threshold(
+        meanfield_object=active_space_meanfield_object,
+        eri_full=eri_full,
+        candidate_thresholds=candidate_thresholds,
+        error_budget=block_encoding_error_tolerance / 3,
+    )
+
+    molecular_data = _get_molecular_data(
+        active_space_molecule, active_space_meanfield_object
+    )
+
+    interaction_op = molecular_data.get_molecular_hamiltonian()
+    instance = ChemicalHamiltonian(mol_ham=interaction_op, mol_name="H2")
+
+    # Note that the factor of ten arises because because PyLIQTR will multiply by 0.1 to
+    # determine the allowed walk operator error. The factor of 2/3 comes from the fact
+    # that we allocate 1/3 of the block encoding error to truncation.
     encoding = DoubleFactorized(
-        instance=instance, energy_error=walk_operator_error_tolerance * 10, prec=1e-10
+        instance,
+        energy_error=block_encoding_error_tolerance * 10 * 2 / 3,
+        df_error_threshold=df_threshold,
+        sf_error_threshold=0,
     )
-    circuit = QubitizedPhaseEstimation(
-        encoding,
-    )
+
+    circuit = QubitizedPhaseEstimation(encoding, eps=sigma)
 
     hardware_failure_tolerance_per_shot = get_hardware_failure_tolerance_per_shot(
         failure_tolerance=hardware_failure_tolerance, num_shots=num_shots
