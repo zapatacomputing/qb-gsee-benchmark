@@ -16,7 +16,7 @@ $$
 Rank $L$
 Eigenvalues} $\{ \lambda_\ell\}_{\ell=1}^L$
 
-    Let $G_{\textit{Interaction}}(H) = (V,E)$ where $V = [n]$ for an $n$-qubit Hamiltonian $H$ where the edge set contains hyperedges $e_i = (i_1,...,i_{k(i)}) \in E$ where $i_1, ..., i_{k(i)} \in \{X,Y,Z\}$ are all those non-identity Pauli string terms. The graph has edge weights $w(e) = h_e$ where $h_e$ is the coefficient of Pauli string $e \in E$ where $H = \sum_{e \in E} h_e P_e$. We take statistics (max, min, mean, std. dev.) on edge order (Pauli weight), vertex degree, and edge weights.
+ $G(H) = (V,E)$ where $V = [n]$ for an $n$-qubit Hamiltonian $H$ where the edge set contains hyperedges $e_i = (i_1,...,i_{k(i)}) \in E$ where $i_1, ..., i_{k(i)} \in \{X,Y,Z\}$ are all those non-identity Pauli string terms. The graph has edge weights $w(e) = h_e$ where $h_e$ is the coefficient of Pauli string $e \in E$ where $H = \sum_{e \in E} h_e P_e$. We take statistics (max, min, mean, std. dev.) on edge order (Pauli weight), vertex degree, and edge weights.
 
 Number of Pauli Strings 
 $$
