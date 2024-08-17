@@ -23,6 +23,6 @@ Number of Pauli Strings | $E$ | =  |{ $P : |h_P| > 0$  }|
 
 Edge Order $\mathrm{ord}(e_i) = k(i)$
 
-Vertex Degree $\mathrm{deg}(v) = |\{ v \in e : e \in E\}|$
+Vertex Degree $\mathrm{deg}(v)$ = |{ $v \in e : e \in E$ }|
 
 
