@@ -1,0 +1,2635 @@
+{
+    "solution_uuid": "c3b3913d-8fe0-4f08-ac1b-b9d4a62ee370",
+    "problem_instance_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "short_name": "FCIDUMP_L_4x4_Ut_2.0",
+    "creation_timestamp": "2024-08-15T19:48:19.927149Z",
+    "contact_info": [
+        {
+            "name": "Joshua T. Cantin",
+            "email": "joshua.cantin@utoronto.ca",
+            "institution": "University of Toronto at Scarborough"
+        }
+    ],
+    "solution_data": [
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 14.671131732
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -7.820734488497647,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 232.497837183
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 4,
+            "discarded_weight": 0.04004927781829802
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 14.775077141
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -8.193988042235604,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 238.209750539
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 5,
+            "discarded_weight": 0.04293448347058135
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 15.847662051
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -9.063195817066195,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 281.587573888
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 6,
+            "discarded_weight": 0.07885980028819091
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 16.104921328
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -9.354505542397028,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 292.022789481
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 7,
+            "discarded_weight": 0.022841032416651287
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 14.652033498
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -9.909879629649863,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 232.404273835
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 8,
+            "discarded_weight": 0.02953098147573788
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 14.970668322
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -10.193906436561457,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 246.395383987
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 9,
+            "discarded_weight": 0.05006889891386479
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 16.640645957
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -10.567756047491368,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 313.395499754
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 10,
+            "discarded_weight": 0.03453049803298164
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 13.146403423
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -12.010821783681846,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 173.290791401
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 11,
+            "discarded_weight": 0.03190350169426147
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 17.371173849
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -12.509895342895323,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 341.515770509
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 13,
+            "discarded_weight": 0.031410027684734214
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 17.70423184
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -13.911840325642583,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 355.288495435
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 15,
+            "discarded_weight": 0.04469409614474097
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 17.734522889
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.10219048300571,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 356.64713724
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 17,
+            "discarded_weight": 0.03543708337055861
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 18.388898054
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.23328706672703,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 382.621836799
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 19,
+            "discarded_weight": 0.02111302529975078
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 18.227458777
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.419978092110581,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 376.065657885
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 21,
+            "discarded_weight": 0.012540451102299963
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 18.879063974
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.495041589121012,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 402.581335717
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 24,
+            "discarded_weight": 0.012287003821989722
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.148324628
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.623267566328323,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 412.848550717
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 27,
+            "discarded_weight": 0.012222027041144265
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.576644767
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.728578983782729,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 429.660804657
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 30,
+            "discarded_weight": 0.013245095751140482
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.297340088
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.798585268878611,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 419.332349109
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 33,
+            "discarded_weight": 0.01127536850003985
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 18.703309239
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.905135095803749,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 395.570730778
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 37,
+            "discarded_weight": 0.010304130587263803
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.204942212
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -14.973049400366119,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 415.282345739
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 41,
+            "discarded_weight": 0.008302866770374819
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.894787329
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.037207566079642,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 442.752723277
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 46,
+            "discarded_weight": 0.006929360256065995
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 20.163585089
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.092965837179618,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 453.695582782
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 51,
+            "discarded_weight": 0.006266825801727238
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.766319248
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.144168632753178,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 437.752238897
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 57,
+            "discarded_weight": 0.0056144047119321035
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 20.94263288
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.182734118308247,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 484.644569274
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 63,
+            "discarded_weight": 0.005031777831842625
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 21.406619087
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.218391392076601,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 503.557324071
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 70,
+            "discarded_weight": 0.004273676540660875
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 15.70578321
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.249837893867845,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 275.682696725
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 77,
+            "discarded_weight": 0.0038725128074075213
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 23.365327918
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.278877238087375,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 581.405409419
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 85,
+            "discarded_weight": 0.003779127332761
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 18.033526524
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.3057548233581,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 368.830626381
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 94,
+            "discarded_weight": 0.0037458149408880273
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 19.154322958
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.326579696790244,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 412.850176623
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 104,
+            "discarded_weight": 0.003393302169693641
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 21.704401269
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.349665211251931,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 515.376622033
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 115,
+            "discarded_weight": 0.0028853341070951164
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 24.186605363
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.371554857662254,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 614.382844352
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 127,
+            "discarded_weight": 0.0026444796478230035
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 21.453769366
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.39143819381253,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 505.08148992
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 140,
+            "discarded_weight": 0.0024840750311685253
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 27.166306346
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.410594419847008,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 732.870910528
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 154,
+            "discarded_weight": 0.0023683571682310907
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 24.281870499
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.430179357865686,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 617.97466485
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 170,
+            "discarded_weight": 0.002259377131189229
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 37.254196599
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.443991506157124,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 1135.402272041
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 188,
+            "discarded_weight": 0.002073154165222961
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 31.19962359
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.456890836116617,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 894.157969085
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 207,
+            "discarded_weight": 0.0018710084118103167
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 46.599635755
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.468986775568773,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 1508.723778971
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 228,
+            "discarded_weight": 0.0016420134203467293
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 35.629760984
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.480627494688385,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 1069.193498269
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 251,
+            "discarded_weight": 0.0015083766456274214
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 38.151651756
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.489505281223419,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 1170.714126593
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 277,
+            "discarded_weight": 0.001287863602955892
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 43.859774108
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.497331962878478,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 1398.638310188
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 305,
+            "discarded_weight": 0.0011214816560177392
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 48.027358379
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.504164813455724,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 1547.542678216
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 336,
+            "discarded_weight": 0.0010022182666060504
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 98.004703806
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.509517926033647,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 3453.385249041
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 370,
+            "discarded_weight": 0.0008733837200728623
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 61.678594822
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.513689485349587,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 2046.059813534
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 408,
+            "discarded_weight": 0.0007279618566360206
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 104.246441927
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.517685520374487,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 3661.685024024
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 449,
+            "discarded_weight": 0.0006256334492011814
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 81.514292937
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.52119264249746,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 2793.232675016
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 494,
+            "discarded_weight": 0.0005228507168036342
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 79.990360254
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.52384087722505,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 2725.826517029
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 544,
+            "discarded_weight": 0.0004242925693027732
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 178.103019074
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.526200318821013,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 6326.197719152
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 599,
+            "discarded_weight": 0.0003504666874832956
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 105.590620582
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.528092383910082,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 3488.93963744
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 659,
+            "discarded_weight": 0.0002878630572033543
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 158.352875984
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.529687585587636,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 5151.347336063
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 725,
+            "discarded_weight": 0.00022958073374750615
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 204.079822273
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.531098630163825,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 6482.190788088
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 798,
+            "discarded_weight": 0.00018071753473187458
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 192.363971304
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.53226636068208,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 5877.041387803
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 878,
+            "discarded_weight": 0.00014357982761392874
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 222.789528798
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.53313565444201,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 6592.585397738
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 966,
+            "discarded_weight": 0.00011216926018865329
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 294.902089094
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.533797273920683,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 8354.414011528
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1063,
+            "discarded_weight": 8.599600586269333e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 356.996601377
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.534359499636961,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 9703.281410103
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1170,
+            "discarded_weight": 6.552941431368911e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 342.003557353
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.53472806737074,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 9154.122546962
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1287,
+            "discarded_weight": 4.808065219736812e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 343.416045067
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.534988718938623,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 8888.7458494
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1416,
+            "discarded_weight": 3.426903005312696e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 415.096137563
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.535179534769856,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 10418.530504062
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1558,
+            "discarded_weight": 2.462833593686202e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 461.38808903
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.53530329077335,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 11343.771973319
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1714,
+            "discarded_weight": 1.7426479276563236e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 544.157373612
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.53538862716994,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 13100.192233391
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 1886,
+            "discarded_weight": 1.2274442550716986e-05
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 541.401118748
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.535446407499297,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 13015.695284237
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 2075,
+            "discarded_weight": 8.518884870871682e-06
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 624.771714176
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 9.089567615
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 5.571928544
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.001389035
+                }
+            },
+            "energy": -15.535483241366144,
+            "energy_units": "Hartree",
+            "run_time_cpu": {
+                "overall_time": {
+                    "seconds": 14803.722048567
+                },
+                "preprocessing_time": {
+                    "seconds": 10.031095324999999
+                },
+                "algorithm_run_time": {
+                    "seconds": 222.255202138
+                },
+                "postprocessing_time": {
+                    "seconds": 0.055372043
+                }
+            },
+            "bond_dimension": 2283,
+            "discarded_weight": 5.863421754210271e-06
+        },
+        {
+            "instance_data_object_uuid": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "run_time": {
+                "overall_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.0
+                },
+                "preprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.0
+                },
+                "algorithm_run_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.0
+                },
+                "postprocessing_time": {
+                    "wall_clock_start_time": "9999-12-31T23:59:90.999Z",
+                    "wall_clock_stop_time": "9999-12-31T23:59:99.999Z",
+                    "seconds": 0.0
+                }
+            },
+            "energy": 0.0,
+            "extrapolated_energy": -15.535596724273375,
+            "energy_units": "Hartree",
+            "extrapolated_energy_95_ci": 1.8545210676e-05,
+            "extrapolated_bond_dimension": 1184,
+            "extrapolated_bond_dimension_lower_bound": 780,
+            "extrapolated_bond_dimension_upper_bound": 1840
+        }
+    ],
+    "compute_hardware_type": "classical_computer",
+    "compute_details": {
+        "Machine": "Niagara Cluster, Compute Canada",
+        "CPU": "40 Intel \"Skylake\" cores at 2.4 GHz or 40 Intel \"CascadeLake\" cores at 2.5 GHz",
+        "RAM": "202 GB (188 GiB)"
+    },
+    "digital_signature": null,
+    "$schema": "https://github.com/jp7745/qb-file-schemas/blob/main/schemas/solution.schema.0.0.1.json"
+}
