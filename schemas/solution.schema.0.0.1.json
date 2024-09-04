@@ -15,6 +15,9 @@
         "digital_signature",
         "$schema"
     ],
+    "optional": [
+        "is_resource_estimate"
+    ],
     "properties": {
         "$schema": {
             "title": "Schema URI",
@@ -76,37 +79,42 @@
                 }
             }
         },
+        "is_resource_estimate": {
+            "title": "Is Resource Estimate",
+            "description": "A boolean indicating whether the solution is an estimate of a solver's performance. If this field is not set, it is assumed to be false.",
+            "type": "boolean"
+        },
         "solution_data": {
             "title": "Solution Data",
             "description": "A list of objects describing the data.  Exact structure is TDB.  For large instances, a URL to the data is given.",
             "type": "array",
             "items": {
                 "type": "object",
-                "required":[
+                "required": [
                     "instance_data_object_uuid",
-                    "run_time",
-                    "energy"
+                    "run_time"
                 ],
-                "optional":[
+                "optional": [
+                    "energy",
                     "energy_units",
                     "independent_parameters"
                 ],
-                "properties":{
-                    "instance_data_object_uuid":{
-                        "title":"Instance Data Object UUID",
-                        "description":"TODO: description",
+                "properties": {
+                    "instance_data_object_uuid": {
+                        "title": "Instance Data Object UUID",
+                        "description": "TODO: description",
                         "type": "string",
                         "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
                     },
-                    "energy":{
-                        "title":"Energy",
-                        "description":"The Ground State Energy.",
-                        "type":"number"
+                    "energy": {
+                        "title": "Energy",
+                        "description": "The Ground State Energy.",
+                        "type": "number"
                     },
-                    "energy_units":{
-                        "title":"Energy Units",
-                        "description":"units.  E.g., `kcal/mol`",
-                        "type":"string"
+                    "energy_units": {
+                        "title": "Energy Units",
+                        "description": "units.  E.g., `kcal/mol`",
+                        "type": "string"
                     },
                     "run_time": {
                         "title": "Wall Clock Runtime",
@@ -124,9 +132,11 @@
                                 "description": "Includes all pre/postprocessing times and algorithm_run_time.",
                                 "type": "object",
                                 "required": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time",
                                     "seconds"
+                                ],
+                                "optional": [
+                                    "wall_clock_start_time",
+                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -144,7 +154,8 @@
                                     "seconds": {
                                         "title": "Duration in Seconds",
                                         "description": "The number of seconds that has elapsed between start/stop times reported.",
-                                        "type": "number"
+                                        "type": "number",
+                                        "minimum": 0
                                     }
                                 }
                             },
@@ -153,9 +164,11 @@
                                 "description": "The time required to load any data into an idle machine before running an algorithm.",
                                 "type": "object",
                                 "required": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time",
                                     "seconds"
+                                ],
+                                "optional": [
+                                    "wall_clock_start_time",
+                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -173,7 +186,8 @@
                                     "seconds": {
                                         "title": "Duration in Seconds",
                                         "description": "The number of seconds that has elapsed between start/stop times reported.",
-                                        "type": "number"
+                                        "type": "number",
+                                        "minimum": 0
                                     }
                                 }
                             },
@@ -182,9 +196,11 @@
                                 "description": "The start/stop times for how long the software/algorithm ran.",
                                 "type": "object",
                                 "required": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time",
                                     "seconds"
+                                ],
+                                "optional": [
+                                    "wall_clock_start_time",
+                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -202,7 +218,8 @@
                                     "seconds": {
                                         "title": "Duration in Seconds",
                                         "description": "The number of seconds that has elapsed between start/stop times reported.",
-                                        "type": "number"
+                                        "type": "number",
+                                        "minimum": 0
                                     },
                                     "compute_node_run_time_breakdown": {
                                         "title": "Compute Node Run Time Breakdown",
@@ -215,9 +232,11 @@
                                 "description": "The time required measure or read out any data from the machine.  .",
                                 "type": "object",
                                 "required": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time",
                                     "seconds"
+                                ],
+                                "optional": [
+                                    "wall_clock_start_time",
+                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -235,7 +254,8 @@
                                     "seconds": {
                                         "title": "Duration in Seconds",
                                         "description": "The number of seconds that has elapsed between start/stop times reported.",
-                                        "type": "number"
+                                        "type": "number",
+                                        "minimum": 0
                                     }
                                 }
                             }
