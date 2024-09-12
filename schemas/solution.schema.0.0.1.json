@@ -15,9 +15,6 @@
         "digital_signature",
         "$schema"
     ],
-    "optional": [
-        "is_resource_estimate"
-    ],
     "properties": {
         "$schema": {
             "title": "Schema URI",
@@ -94,11 +91,6 @@
                     "instance_data_object_uuid",
                     "run_time"
                 ],
-                "optional": [
-                    "energy",
-                    "energy_units",
-                    "independent_parameters"
-                ],
                 "properties": {
                     "instance_data_object_uuid": {
                         "title": "Instance Data Object UUID",
@@ -115,6 +107,19 @@
                         "title": "Energy Units",
                         "description": "units.  E.g., `kcal/mol`",
                         "type": "string"
+                    },
+                    "error_bound": {
+                        "title": "Error Bound",
+                        "description": "Bound on the absolute energy error.",
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "confidence_level": {
+                        "title": "Confidence Level",
+                        "description": "Probability that the absolute energy error is less than the error bound.",
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
                     },
                     "run_time": {
                         "title": "Wall Clock Runtime",
@@ -133,10 +138,6 @@
                                 "type": "object",
                                 "required": [
                                     "seconds"
-                                ],
-                                "optional": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -166,10 +167,6 @@
                                 "required": [
                                     "seconds"
                                 ],
-                                "optional": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time"
-                                ],
                                 "properties": {
                                     "wall_clock_start_time": {
                                         "title": "Wall Clock Start Time",
@@ -197,10 +194,6 @@
                                 "type": "object",
                                 "required": [
                                     "seconds"
-                                ],
-                                "optional": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -233,10 +226,6 @@
                                 "type": "object",
                                 "required": [
                                     "seconds"
-                                ],
-                                "optional": [
-                                    "wall_clock_start_time",
-                                    "wall_clock_stop_time"
                                 ],
                                 "properties": {
                                     "wall_clock_start_time": {
@@ -291,6 +280,37 @@
                     "type": "null"
                 }
             ]
+        }
+    },
+    "if": {
+        "required": ["is_resource_estimate"],
+        "properties": {
+            "is_resource_estimate": {
+                "const": true
+            }
+        }
+    },
+    "then": {
+        "properties": {
+            "solution_data": {
+                "items": {
+                    "required": [
+                        "error_bound",
+                        "confidence_level"
+                    ]
+                }
+            }
+        }
+    },
+    "else": {
+        "properties": {
+            "solution_data": {
+                "items": {
+                    "required": [
+                        "energy"
+                    ]
+                }
+            }
         }
     }
 }
