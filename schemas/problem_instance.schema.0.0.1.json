@@ -175,7 +175,8 @@
                 ],
                 "optional":[
                     "independent_parameters",
-                    "features"
+                    "features",
+                    "scf_solution_data"
                 ],
                 "properties":{
                     "instance_data_object_uuid":{
@@ -218,6 +219,11 @@
                     "features":{
                         "title":"Features of the Instance",
                         "description":"[OPTIONAL] Supplemental information about the problem features that drive the construction of the Hamiltonian.  TODO: we may define this structure more.",
+                        "type":"object"
+                    },
+                    "scf_solution_data":{
+                        "title": "SCF Solution File",
+                        "description":"[OPTIONAL] Supplemental SCF solution file that underlies the Hamiltonian, including a UUID, URL, and parameters",
                         "type":"object"
                     }
                 }
