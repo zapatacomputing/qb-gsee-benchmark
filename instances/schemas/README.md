@@ -3,7 +3,7 @@
 Proposed JSON schemas for Quantum Benchmarking file exchange.  This repository contains *only* the schemas.  
 The actual `problem_instance` files are in a few other places:
 
-1. Ground State Energy Estimation (GSEE):  https://github.com/jp7745/qb-gsee-problem-instances/tree/main
+1. Ground State Energy Estimation (GSEE):  https://github.com/zapatacomputing/qb-gsee-benchmark/tree/main/instances/schemas
 2. Differential Equations:  TBD
 3. Quantum Dynamics:  TBD
 
@@ -31,7 +31,7 @@ Develop your own `problem_instance` JSON file, filling in most of the self-expla
 
 When developing a new `problem_instance` file, Microsoft VS code will usually automatically pull the schemas and to give you hints on what fields are required and the associated format.  Restart VS Code or use the `JSON: Clear Schema Cache` action to update schemas.  If this continues to fail, VS Code users can manually download schemas and manually associate a schema with a filename by regex.  There are a variety of other tools for validating your JSON file.
 
-The `problem_instance` JSON metadata file should be placed in the appropriate repository. E.g., for GSEE: https://github.com/jp7745/qb-gsee-problem-instances/tree/main.  
+The `problem_instance` JSON metadata file should be placed in the appropriate repository. E.g., for GSEE: https://github.com/zapatacomputing/qb-gsee-benchmark/tree/main/instances/schemas.  
 
 The associated data files that go along with your `problem_instance` file will be placed somewhere else.  If you don't have your own server, L3Harris can host your files on the SFTP server.  L3Harris has additional *read/write* credentials for the SFTP server that may be shared with other teams.
 
@@ -40,20 +40,3 @@ Note that the schema includes a field for `license`, so you may choose the appro
 ###  What if the JSON schema doesn't have the fields I want to use?
 
 Contact the BOBQAT team and we'll discuss modifying the schema.
-
-
-### License:
-
-Copyright 2023 L3Harris Technologies, Inc.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
