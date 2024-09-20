@@ -251,7 +251,7 @@ def get_df_qpe_circuit(
         instance,
         energy_error=block_encoding_error_tolerance * 10 * 2 / 3,
         df_error_threshold=df_threshold,
-        sf_error_threshold=0,
+        sf_error_threshold=1e-12,
     )
 
     circuit = QubitizedPhaseEstimation(encoding, eps=sigma)
