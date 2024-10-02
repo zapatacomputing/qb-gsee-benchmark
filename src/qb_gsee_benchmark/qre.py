@@ -1,7 +1,6 @@
 ################################################################################
 # © Copyright 2024 Zapata Computing Inc.
 ################################################################################
-from typing import Iterable, Optional
 
 import numpy as np
 from openfermion import InteractionOperator
@@ -12,7 +11,9 @@ from pyLIQTR.qubitization.phase_estimation import QubitizedPhaseEstimation
 from pyscf import ao2mo
 
 
-def integrals2intop(h1, eri, ecore):
+def integrals2intop(
+    h1: np.ndarray, eri: np.ndarray, ecore: float
+) -> InteractionOperator:
     norb = h1.shape[0]
     h2_so = np.zeros((2 * norb, 2 * norb, 2 * norb, 2 * norb))
     h1_so = np.zeros((2 * norb, 2 * norb))
@@ -53,15 +54,19 @@ def get_num_shots(square_overlap: float, failure_tolerance: float):
     return np.ceil(np.log(failure_tolerance) / np.log(1 - square_overlap))
 
 
-def get_hardware_failure_tolerance_per_shot(failure_tolerance: float, num_shots: int):
-    """Get the allowable hardware failure rate per shot.
+def get_failure_tolerance_per_shot(
+    failure_tolerance: float, num_shots: int
+) -> tuple[QubitizedPhaseEstimation, int, float]:
+    """Get the allowable failure rate per shot.
 
-    Corresponds to Eq. 18 in arXiv:2406.06335v1.
+    Generalizes Eq. 18 in arXiv:2406.06335v1 to consider any failure mode.
 
     Args:
         num_shots: The number of shots.
         failure_tolerance: The allowable probability that none of the shots experiences
-            an (uncorrected) hardware error.
+            a failure.
+
+    Returns: The allowable probability that an individual shot experiences a failure.
     """
     return 1 - (1 - failure_tolerance) ** (1 / num_shots)
 
@@ -91,19 +96,35 @@ def get_df_qpe_circuit(
         A tuple containing the QPE circuit, the number of shots, and the allowable
             hardware failure rate per shot.
     """
+
+    # Allowed probability that none of the shots projects into the ground state.
+    # Corresponds to \overline{\p_GS} in the paper.
+    state_projection_failure_tolerance = failure_tolerance * 0.1
+
     # Allowed probability that spectral leakage causes the estimated energy to deviate
     # from the true eigenvalue of the encoded Hamiltonian by more than
     # phase_estimation_error_tolerance. Corresponds to \overline{\delta_{QPE}} in
     # the paper.
     phase_estimation_failure_tolerance = failure_tolerance * 0.8
 
-    # Allowed probability that none of the shots projects into the ground state.
-    # Corresponds to \overline{\p_GS} in the paper.
-    state_projection_failure_tolerance = failure_tolerance * 0.1
-
     # Allowed probability that one or more shots experiences an (uncorrected) hardware
     # error. Corresponds to \overline{delta_HW} in the paper.
     hardware_failure_tolerance = failure_tolerance * 0.1
+
+    # Number of shots. Corresponds to Eq. 15 in the paper.
+    num_shots = get_num_shots(square_overlap, state_projection_failure_tolerance)
+
+    # Allowed probability that an individual shot fails due to phase estimation error.
+    # Corresponds to the expression under the square root in Eq. 22 of the paper.
+    phase_estimation_failure_tolerance_per_shot = get_failure_tolerance_per_shot(
+        failure_tolerance=phase_estimation_failure_tolerance, num_shots=num_shots
+    )
+
+    # Allowed probability that an individual shot fails due to an uncorrected physical
+    # error. Corresponds to Eq. 16 in the paper.
+    hardware_failure_tolerance_per_shot = get_failure_tolerance_per_shot(
+        failure_tolerance=hardware_failure_tolerance, num_shots=num_shots
+    )
 
     # Allowable error in the estimated energy due to spectral leakage. Corresponds to
     # \overline{\epsilon_{SL}} in the paper.
@@ -117,10 +138,9 @@ def get_df_qpe_circuit(
     # to achieve the desired phase estimate failure rate based on the Chebyshev
     # inequality. See Eq. 8 in the paper.
     sigma = (
-        np.sqrt(phase_estimation_failure_tolerance) * spectral_leakage_error_tolerance
+        np.sqrt(phase_estimation_failure_tolerance_per_shot)
+        * spectral_leakage_error_tolerance
     )
-
-    num_shots = get_num_shots(square_overlap, state_projection_failure_tolerance)
 
     eri = ao2mo.restore("s1", fci["H2"], fci["NORB"])
     interaction_op = integrals2intop(h1=fci["H1"], eri=eri, ecore=fci["ECORE"])
@@ -137,9 +157,5 @@ def get_df_qpe_circuit(
     )
 
     circuit = QubitizedPhaseEstimation(encoding, eps=sigma)
-
-    hardware_failure_tolerance_per_shot = get_hardware_failure_tolerance_per_shot(
-        failure_tolerance=hardware_failure_tolerance, num_shots=num_shots
-    )
 
     return circuit, num_shots, hardware_failure_tolerance_per_shot
