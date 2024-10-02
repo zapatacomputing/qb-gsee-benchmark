@@ -3,10 +3,11 @@
 ################################################################################
 
 
+import os
+
 import numpy as np
 import pytest
 from pyscf.tools import fcidump
-import os
 
 from qb_gsee_benchmark.qre import (
     get_df_qpe_circuit,
@@ -50,7 +51,9 @@ def test_get_failure_tolerance_per_shot(
 
 
 def test_get_df_qpe_circuit():
-    fci = fcidump.read(filename=os.path.join(os.path.dirname(__file__), "FCIDUMP_b_sto-3g"))
+    fci = fcidump.read(
+        filename=os.path.join(os.path.dirname(__file__), "fcidump.h2_sto-3g")
+    )
     square_overlap = 0.8
     failure_tolerance = 1e-2
     error_tolerance = 1.6e-3
@@ -59,6 +62,6 @@ def test_get_df_qpe_circuit():
         square_overlap=square_overlap,
         error_tolerance=error_tolerance,
         failure_tolerance=failure_tolerance,
-        df_threshold=1e-3
+        df_threshold=1e-3,
     )
     assert (1 - square_overlap) ** num_shots < failure_tolerance
