@@ -54,10 +54,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-<<<<<<< HEAD
-=======
 cover/
->>>>>>> main
 
 # Translations
 *.mo
@@ -80,10 +77,7 @@ instance/
 docs/_build/
 
 # PyBuilder
-<<<<<<< HEAD
-=======
 .pybuilder/
->>>>>>> main
 target/
 
 # Jupyter Notebook
